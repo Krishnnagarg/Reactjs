@@ -1,0 +1,27 @@
+import { useState } from "react"
+
+
+function App() {
+  const [color, setColor] = useState("White");
+
+  return (
+    <div className="w-full h-screen duration-200" style={{ backgroundColor: color }}>
+      <div className="fixed flex flex-wrap justify-center bottom-10 inset-x-0 px-2">
+        <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl">
+          <button nClick={() => setColor("red")} className="outline-none px-4 rounded-xl " style={{ backgroundColor: "red"}}>Red</button>
+          <button onClick={() => setColor("green")} className="outline-none px-4 rounded-xl " style={{ backgroundColor: "green" }}>Green</button>
+          <button onClick={() => setColor("blue")} className="outline-none px-4 rounded-xl " style={{ backgroundColor: "blue" }}>Blue</button>
+          <button onClick={() => setColor("orange")} className="outline-none px-4 rounded-xl " style={{ backgroundColor: "orange" }}>Orange</button>
+          <button onClick={() => setColor("Yellow")} className="outline-none px-4 rounded-xl " style={{ backgroundColor: "Yellow" }}>Yellow</button>
+          <button onClick={() => setColor("olive")} className="outline-none px-4 rounded-xl " style={{ backgroundColor: "olive" }}>Olive</button>
+          <button onClick={() => setColor("Black")} className="outline-none px-4 rounded-xl " style={{ backgroundColor: "Black", color: "white" }}>Black</button>
+
+        </div>
+      </div>
+
+
+    </div>
+  );
+}
+
+export default App
