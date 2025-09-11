@@ -1,7 +1,7 @@
 
 import './App.css'
 import UserContext from './Context/userContext'
-import UserContextProvider from './Context/USerContextProvider'
+import UserContextProvider from './Context/UserContextProvider'
 import Login from './components/Login'
 import Profile from './components/Profile'
 
